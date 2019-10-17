@@ -1,0 +1,122 @@
+.title{
+    text-align: center;
+    color:#3EA99F;
+    
+}
+/* input*/
+.input-grid{
+    display : grid ;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 20px ;
+}
+.btn{
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+    font-size: 15px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-income{
+    background-color:#32CD32;
+}
+.btn-expense{
+background-color: firebrick;
+}
+.btn-reset{
+    background-color: royalblue;
+}
+.btn-income:hover{
+    margin-top:8px;
+    margin-left:8px;
+    background-color:#00FF00;
+}
+.btn-expense:hover{
+    margin-top:8px;
+    margin-left:8px;
+    background-color:#DC143C;
+}
+.btn-reset:hover{
+    margin-top:8px;
+    margin-left:8px;
+    background-color: #38ACEC;
+}
+.input-field{
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+/* output*/
+.output-grid{
+    display : grid ;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
+.income,.expense{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:40px;
+    grid-row-gap: 10px;
+    padding:20px;
+    justify-content:center;
+}
+.desc,.amt{
+    align-self: center;
+}
+.income>p{
+    color:red;
+}
+.expense>p{
+    color:green;
+}
+.income-heading,.expense-heading{
+    text-align: center;
+}
+.close{
+    color:red;
+    border: 1px solid black;
+    width :25px;
+    height:20px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-bottom : 5px;
+    
+}
+.total{
+    font-weight: bold;
+}
+/* overall*/
+.overall{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@keyframes animateb{
+    0% {transform: rotate3d(0,1,0,0deg);}
+    10% {transform: rotate3d(0,1,0,30deg);}
+    25% {transform: rotate3d(0,1,0,90deg);}
+    45% {transform: rotate3d(0,1,0,130deg);}
+    50% {transform: rotate3d(0,1,0,180deg);}
+    65% {transform: rotate3d(0,1,0,230deg);}
+    75% {transform: rotate3d(0,1,0,270deg);}
+    85% {transform: rotate3d(0,1,0,300deg);}
+    100% {transform: rotate3d(0,1,0,360deg);}
+}
+
+.b-rotate{
+    display:inline-block;
+    animation: animateb 1s infinite;
+    text-shadow: 2px 2px #43BFC7;
+    font-size: 50px;
+}
+
